@@ -2875,9 +2875,9 @@ ant-design-palettes@^1.1.3:
     tinycolor2 "^1.4.1"
 
 antd@^3.11.2:
-  version "3.11.4"
-  resolved "https://npm.nekotal.tech/antd/-/antd-3.11.4.tgz#39c4a0e9ff1a944da4bdcb23c91432f0e8729158"
-  integrity sha512-no4tx3A3RyoccGE9DbuR5J4pZwW1hhWM1CoVvIqEdzVkc0pFjqht4Ad1b02kHwyYkPzXMezJOn5OwpkuejLGxA==
+  version "3.11.5"
+  resolved "https://npm.nekotal.tech/antd/-/antd-3.11.5.tgz#70a22c902fa765293113f4a25f7c8a1c642ab175"
+  integrity sha512-+uJJ1S8FrlTImwRzYvhRFvf72K5ft0OV2adxhxaKx1x5r/JHzEKLjMSkwLqIEswS0iUMkMnp1VUNvUN1PFiJrw==
   dependencies:
     "@ant-design/icons" "~1.1.15"
     "@ant-design/icons-react" "~1.1.2"
@@ -5910,7 +5910,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-class@15.x, create-react-class@^15.5.2, create-react-class@^15.5.3, create-react-class@^15.6.2, create-react-class@^15.6.3:
+create-react-class@^15.5.2, create-react-class@^15.5.3, create-react-class@^15.6.2, create-react-class@^15.6.3:
   version "15.6.3"
   resolved "https://npm.nekotal.tech/create-react-class/-/create-react-class-15.6.3.tgz#2d73237fb3f970ae6ebe011a9e66f46dbca80036"
   integrity sha512-M+/3Q6E6DLO6Yx3OwrWjwHBnvfXXYA7W+dFjt/ZDBemHO1DDZhsalX/NUtnTYclN6GfnBDRh4qRHjcDHmlJBJg==
@@ -6073,11 +6073,6 @@ css-loader@^1.0.1:
     postcss-modules-values "^1.3.0"
     postcss-value-parser "^3.3.0"
     source-list-map "^2.0.0"
-
-css-mediaquery@^0.1.2:
-  version "0.1.2"
-  resolved "https://npm.nekotal.tech/css-mediaquery/-/css-mediaquery-0.1.2.tgz#6a2c37344928618631c54bd33cedd301da18bea0"
-  integrity sha1-aiw3NEkoYYYxxUvTPO3TAdoYvqA=
 
 css-parse@1.7.x:
   version "1.7.0"
@@ -8790,11 +8785,6 @@ husky@0.15.0-rc.9:
     run-node "^0.2.0"
     slash "^1.0.0"
 
-hyphenate-style-name@^1.0.0:
-  version "1.0.2"
-  resolved "https://npm.nekotal.tech/hyphenate-style-name/-/hyphenate-style-name-1.0.2.tgz#31160a36930adaf1fc04c6074f7eb41465d4ec4b"
-  integrity sha1-MRYKNpMK2vH8BMYHT360FGXU7Es=
-
 i18next-browser-languagedetector@2.2.3:
   version "2.2.3"
   resolved "https://npm.nekotal.tech/i18next-browser-languagedetector/-/i18next-browser-languagedetector-2.2.3.tgz#4196a9964b6d51b76254706a267ba746c9ca19de"
@@ -10404,7 +10394,7 @@ left-pad@^1.2.0, left-pad@^1.3.0:
   resolved "https://npm.nekotal.tech/left-pad/-/left-pad-1.3.0.tgz#5b8a3a7765dfe001261dde915589e782f8c94d1e"
   integrity sha512-XI5MPzVNApjAyhQzphX8BkmKsKUxD4LdyK24iZeQGinBN9yTQT3bFlCBy/aVx2HrNcqQGsdot8ghrjyrvMCoEA==
 
-lerna@^3.7.1:
+lerna@^3.8.0:
   version "3.8.0"
   resolved "https://npm.nekotal.tech/lerna/-/lerna-3.8.0.tgz#55f4d4144ddad2872ee5bc52a47366df10a3b7ee"
   integrity sha512-OLdf7JSWjpgVecvVLyTRpeKPjTJOcQa366IvaEhorOIxFPZvR1rNIEvi4DMOAaxNINpmCB4nSm769H7H4jNQyw==
@@ -11002,13 +10992,6 @@ marksy@^6.1.0:
     he "^1.1.1"
     marked "^0.3.12"
 
-matchmediaquery@^0.2.1:
-  version "0.2.1"
-  resolved "https://npm.nekotal.tech/matchmediaquery/-/matchmediaquery-0.2.1.tgz#223c7005793de03e47ce92b13285a72c44ada2cf"
-  integrity sha1-IjxwBXk94D5HzpKxMoWnLEStos8=
-  dependencies:
-    css-mediaquery "^0.1.2"
-
 material-colors@^1.2.1:
   version "1.2.6"
   resolved "https://npm.nekotal.tech/material-colors/-/material-colors-1.2.6.tgz#6d1958871126992ceecc72f4bcc4d8f010865f46"
@@ -11227,16 +11210,6 @@ mini-css-extract-plugin@^0.4.4:
     loader-utils "^1.1.0"
     schema-utils "^1.0.0"
     webpack-sources "^1.1.0"
-
-mini-store@^1.0.2:
-  version "1.1.2"
-  resolved "https://npm.nekotal.tech/mini-store/-/mini-store-1.1.2.tgz#cc150e0878e080ca58219d47fccefefe2c9aea3e"
-  integrity sha512-2gU6dRzyv/79jrPw/SLtnj6EAdYlktW10e5jPqyIVeFgyFHxcP1BoqAH5Uf5WfKXbTdeHgJ+fuoAFP4falptdw==
-  dependencies:
-    hoist-non-react-statics "^2.3.1"
-    prop-types "^15.6.0"
-    react-lifecycles-compat "^3.0.4"
-    shallowequal "^1.0.2"
 
 mini-store@^2.0.0:
   version "2.0.0"
@@ -14041,21 +14014,6 @@ rc-input-number@~4.3.7:
     rc-util "^4.5.1"
     rmc-feedback "^2.0.0"
 
-rc-menu@^6.1.0:
-  version "6.2.11"
-  resolved "https://npm.nekotal.tech/rc-menu/-/rc-menu-6.2.11.tgz#56bed3ed840c2d1fdc9c9dda7bc71e975acd21d4"
-  integrity sha512-aKvLMgKl+3G/ar46nCzTWVBmd0A9BjmwZJYTj7pICbAPkC2xSiYfKq+ywJd/QJO57sj7Sz7OD62LDnlOg99VNw==
-  dependencies:
-    babel-runtime "6.x"
-    classnames "2.x"
-    create-react-class "^15.5.2"
-    dom-scroll-into-view "1.x"
-    mini-store "^1.0.2"
-    prop-types "^15.5.6"
-    rc-animate "2.x"
-    rc-trigger "^2.3.0"
-    rc-util "^4.1.0"
-
 rc-menu@^7.3.0, rc-menu@~7.4.12:
   version "7.4.20"
   resolved "https://npm.nekotal.tech/rc-menu/-/rc-menu-7.4.20.tgz#5c322d330142c465d240d8da7d4206a2a329096c"
@@ -14091,14 +14049,6 @@ rc-pagination@~1.17.5:
     babel-runtime "6.x"
     prop-types "^15.5.7"
     react-lifecycles-compat "^3.0.4"
-
-rc-progress@2.2.5:
-  version "2.2.5"
-  resolved "https://npm.nekotal.tech/rc-progress/-/rc-progress-2.2.5.tgz#e61d0544bf9d4208e5ba32fc50962159e7f952a3"
-  integrity sha1-5h0FRL+dQgjlujL8UJYhWef5UqM=
-  dependencies:
-    babel-runtime "6.x"
-    prop-types "^15.5.8"
 
 rc-progress@~2.2.6:
   version "2.2.6"
@@ -14137,22 +14087,6 @@ rc-select@^8.6.7:
     react-lifecycles-compat "^3.0.2"
     warning "^4.0.2"
 
-rc-select@~7.7.0:
-  version "7.7.8"
-  resolved "https://npm.nekotal.tech/rc-select/-/rc-select-7.7.8.tgz#333c7e4df349986a566b360d62101e4176d772c7"
-  integrity sha512-lu0J3+EElTyMDrgXvs0M1M015KRZEZu/M7k15Kq8scFZ7g4KLTO0cKZfA0GNug2ARj3atrTrSbEAxsy8hMoX7A==
-  dependencies:
-    babel-runtime "^6.23.0"
-    classnames "2.x"
-    component-classes "1.x"
-    dom-scroll-into-view "1.x"
-    prop-types "^15.5.8"
-    rc-animate "2.x"
-    rc-menu "^6.1.0"
-    rc-trigger "^2.2.0"
-    rc-util "^4.0.4"
-    warning "^3.0.0"
-
 rc-slider@~8.6.3:
   version "8.6.4"
   resolved "https://npm.nekotal.tech/rc-slider/-/rc-slider-8.6.4.tgz#b9d9000180f2b89bb71b58717753164b479fc75f"
@@ -14185,20 +14119,6 @@ rc-switch@~1.8.0:
     classnames "^2.2.1"
     prop-types "^15.5.6"
 
-rc-table@6.1.7:
-  version "6.1.7"
-  resolved "https://npm.nekotal.tech/rc-table/-/rc-table-6.1.7.tgz#02e33b2d2c3cffc5c6e05f62c0f61a8de0a1daf7"
-  integrity sha512-oMg+SAgwiCssDg07eYZ8JqozGdDEkUY/G6SglDygRSOOa93Y771ulv0J59k4Cm0thHNVKRrBg34vE+HWo0RG+A==
-  dependencies:
-    babel-runtime "6.x"
-    component-classes "^1.2.6"
-    lodash "^4.17.5"
-    mini-store "^1.0.2"
-    prop-types "^15.5.8"
-    rc-util "^4.0.4"
-    shallowequal "^1.0.2"
-    warning "^3.0.0"
-
 rc-table@~6.4.0:
   version "6.4.2"
   resolved "https://npm.nekotal.tech/rc-table/-/rc-table-6.4.2.tgz#97fdb52fc7817915178aead974d77c21d20236a6"
@@ -14213,20 +14133,6 @@ rc-table@~6.4.0:
     rc-util "^4.0.4"
     react-lifecycles-compat "^3.0.2"
     shallowequal "^1.0.2"
-    warning "^3.0.0"
-
-rc-tabs@~9.2.0:
-  version "9.2.6"
-  resolved "https://npm.nekotal.tech/rc-tabs/-/rc-tabs-9.2.6.tgz#4bd88086496b4f2d19c75c832fe7ec08e6b1643d"
-  integrity sha512-J4HsAPinn/utapHjCg36HdEI/WsL0Ma61t0mTkkEf6Z/LQQWS16LhgLbycF3lTNUIgcZu3dhQFjRDg4kpaFbAQ==
-  dependencies:
-    babel-runtime "6.x"
-    classnames "2.x"
-    create-react-class "15.x"
-    lodash "^4.17.5"
-    prop-types "15.x"
-    rc-hammerjs "~0.6.0"
-    rc-util "^4.0.4"
     warning "^3.0.0"
 
 rc-tabs@~9.5.2:
@@ -14254,15 +14160,6 @@ rc-time-picker@~3.4.0:
     moment "2.x"
     prop-types "^15.5.8"
     rc-trigger "^2.2.0"
-
-rc-tooltip@3.7.0:
-  version "3.7.0"
-  resolved "https://npm.nekotal.tech/rc-tooltip/-/rc-tooltip-3.7.0.tgz#3afbf109865f7cdcfe43752f3f3f501f7be37aaa"
-  integrity sha512-xEoUMatXp8OEL61UFH0+NrC39nkKzpOBhLrJCnnRpDRduU8L3DOhF6CNlIMkvg68hxlGGdquFtFw2t+1xNLX5A==
-  dependencies:
-    babel-runtime "6.x"
-    prop-types "^15.5.8"
-    rc-trigger "^2.2.2"
 
 rc-tooltip@^3.7.0, rc-tooltip@~3.7.3:
   version "3.7.3"
@@ -14511,9 +14408,9 @@ react-element-to-jsx-string@^14.0.2:
     stringify-object "3.2.2"
 
 react-error-overlay@^5.1.0:
-  version "5.1.0"
-  resolved "https://npm.nekotal.tech/react-error-overlay/-/react-error-overlay-5.1.0.tgz#c516995a5652e7bfbed8b497910d5280df74a7e8"
-  integrity sha512-akMy/BQT5m1J3iJIHkSb4qycq2wzllWsmmolaaFVnb+LPV9cIJ/nTud40ZsiiT0H3P+/wXIdbjx2fzF61OaeOQ==
+  version "5.1.1"
+  resolved "https://npm.nekotal.tech/react-error-overlay/-/react-error-overlay-5.1.1.tgz#56f0439f001ff3588da0f479a86482ccb1e708cb"
+  integrity sha512-gJcOyak5ri9mzhpFObSAkCqNNBCVZE8LaR/mX37agULgSL0dobgX11NVSIetvNzhHMkr6CIqV0xiutvvcjBtkw==
 
 react-fontawesome@1.6.1:
   version "1.6.1"
@@ -14616,15 +14513,6 @@ react-modal@^3.6.1:
     prop-types "^15.5.10"
     react-lifecycles-compat "^3.0.0"
     warning "^3.0.0"
-
-react-responsive@4.1.0:
-  version "4.1.0"
-  resolved "https://npm.nekotal.tech/react-responsive/-/react-responsive-4.1.0.tgz#01d129a35729c8f0373e79871cc8d5ecf6e22765"
-  integrity sha512-ZuDraf0qsJlyiTwzeva+foHx83IP6SIhru9o7BvMwQ4ZHjRIL5WjdgVNNrKSRbmeWO9rEJoMpabei/5lJn8KaA==
-  dependencies:
-    hyphenate-style-name "^1.0.0"
-    matchmediaquery "^0.2.1"
-    prop-types "^15.6.1"
 
 react-router-dom@^4.3.1:
   version "4.3.1"
@@ -14742,7 +14630,7 @@ react-treebeard@^3.1.0:
     shallowequal "^1.1.0"
     velocity-react "^1.4.1"
 
-react-virtualized@9.21.0, react-virtualized@^9.21.0:
+react-virtualized@^9.21.0:
   version "9.21.0"
   resolved "https://npm.nekotal.tech/react-virtualized/-/react-virtualized-9.21.0.tgz#8267c40ffb48db35b242a36dea85edcf280a6506"
   integrity sha512-duKD2HvO33mqld4EtQKm9H9H0p+xce1c++2D5xn59Ma7P8VT7CprfAe5hwjd1OGkyhqzOZiTMlTal7LxjH5yBQ==
@@ -14874,9 +14762,9 @@ readable-stream@1.0:
     string_decoder "~0.10.x"
 
 readable-stream@^3.0.6:
-  version "3.1.0"
-  resolved "https://npm.nekotal.tech/readable-stream/-/readable-stream-3.1.0.tgz#19c2e9c1ce43507c53f6eefbcf1ee3d4aaa786f5"
-  integrity sha512-vpydAvIJvPODZNagCPuHG87O9JNPtvFEtjHHRVwNVsVVRBqemvPJkc2SYbxJsiZXawJdtZNmkmnsPuE3IgsG0A==
+  version "3.1.1"
+  resolved "https://npm.nekotal.tech/readable-stream/-/readable-stream-3.1.1.tgz#ed6bbc6c5ba58b090039ff18ce670515795aeb06"
+  integrity sha512-DkN66hPyqDhnIQ6Jcsvx9bFjhw214O4poMBcIMgPVpQvNy9a0e0Uhg5SqySyDKAmUlwt8LonTBz1ezOnM8pUdA==
   dependencies:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
@@ -17486,9 +17374,9 @@ webpack-dev-middleware@3.4.0, webpack-dev-middleware@^3.4.0:
     webpack-log "^2.0.0"
 
 webpack-dev-server@^3.1.8:
-  version "3.1.13"
-  resolved "https://npm.nekotal.tech/webpack-dev-server/-/webpack-dev-server-3.1.13.tgz#72ebc8dab4551f8a8e1fdf6357da97571aee6a23"
-  integrity sha512-o+crjlyTDCAnkZe1CGlP2XLGCgnMN6oSotYdB+r5OGbnf52Dl9T/fCOdKObvanl1jEnMuLBVDnjTXEmCMMksww==
+  version "3.1.14"
+  resolved "https://npm.nekotal.tech/webpack-dev-server/-/webpack-dev-server-3.1.14.tgz#60fb229b997fc5a0a1fc6237421030180959d469"
+  integrity sha512-mGXDgz5SlTxcF3hUpfC8hrQ11yhAttuUQWf1Wmb+6zo3x6rb7b9mIfuQvAPLdfDRCGRGvakBWHdHOa0I9p/EVQ==
   dependencies:
     ansi-html "0.0.7"
     bonjour "^3.5.0"

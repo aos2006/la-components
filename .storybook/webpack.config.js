@@ -96,7 +96,7 @@ module.exports = {
       '.styl',
     ],
     alias: {
-      components: path.resolve(__dirname, '../src/components'),
+        packages: path.resolve(__dirname, '../packages'),
     },
     plugins: [PnpWebpackPlugin, new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson])],
   },
@@ -134,8 +134,8 @@ module.exports = {
           },
           {
             test: [/\.(j|t)sx?$/, /\.(j|t)s?$/],
-            exclude: [/node_modules/, /build/],
-            include: path.resolve(__dirname, '../src'),
+            exclude: [/node_modules/],
+            // include: path.resolve(__dirname, '../packages'),
             use: [
               {
                 loader: 'babel-loader',
@@ -180,7 +180,7 @@ module.exports = {
           },
           {
             test: /\.(js|mjs|jsx)$/,
-            include: path.resolve(__dirname, '../src/components'),
+            include: path.resolve(__dirname, '../packages'),
             exclude: /node_modules/,
             loader: require.resolve('babel-loader'),
             options: {
@@ -303,7 +303,6 @@ module.exports = {
   },
   plugins: [
     new ForkTsCheckerWebpackPlugin(),
-    new ModuleNotFoundPlugin(paths.appPath),
     new CaseSensitivePathsPlugin(),
     new WatchMissingNodeModulesPlugin(paths.appNodeModules),
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/, /antd$/, /lodash$/, /node_modules$/),

@@ -1,0 +1,10 @@
+{
+  "main": "./dist/main.js",
+  "name": "@latoken-web-component/badge",
+  "version": "10.0.185",
+  "license": "MIT",
+  "module": "./dist/main.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack ./src/Badge.tsx --config ../../webpack.config.build.js"
+  }
+}

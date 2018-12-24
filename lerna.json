@@ -1,25 +1,14 @@
 {
-  "version": "independent",
+  "packages": [
+    "packages/*"
+  ],
+  "bootstrap": {
+    "ignore": "component-*",
+    "npmClientArgs": [
+      "--no-package-lock"
+    ]
+  },
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "command": {
-    "publish": {
-      "ignoreChanges": [
-        "ignored-file",
-        "*.md",
-        "*.stories.tsx",
-        "ComponentsStory.tsx",
-        "*.log"
-      ]
-    },
-    "bootstrap": {
-      "ignore": "component-*",
-      "npmClientArgs": [
-        "--no-package-lock"
-      ]
-    }
-  },
-  "packages": [
-    "src/components/*"
-  ]
+  "version": "independent"
 }
