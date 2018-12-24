@@ -1,6 +1,6 @@
 {
   "main": "./Button.tsx",
-  "name": "@latoken-component/button",
+  "name": "@latoken-web-component/button",
   "license": "MIT",
   "version": "0.0.1",
   "devDependencies": {
