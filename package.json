@@ -49,7 +49,7 @@
   "scripts": {
     "lerna": "./node_modules/.bin/lerna",
     "bootstrap": "npx lerna bootstrap",
-    "publish": "npx lerna publish --conventional-commits",
+    "publish": "npx lerna publish --skip-git",
     "build": "NODE_ENV=production webpack --config ./src/webpack.config.build.js",
     "storybook": "start-storybook -p 6006",
     "lint": "npm run eslint && npm run tslint",
