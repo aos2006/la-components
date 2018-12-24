@@ -1,0 +1,13 @@
+{
+  "main": "./Button.tsx",
+  "name": "@latoken-component/button",
+  "license": "MIT",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@latoken-component/badge": "git+https://github.com/aos2006/Badge.git",
+    "classnames": "*"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack ./src/Button.tsx --config ../../webpack.config.build.js"
+  }
+}

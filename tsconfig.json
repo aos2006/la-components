@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es6",
+    "lib": ["es6", "dom", "es2015"],
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "lib",
+    "jsx": "react",
+    "rootDir": ".",
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "removeComments": false,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "errorsAsWarnings": true,
+    "useTranspileModule": true
+  },
+  "include": ["src", "src/global.d.ts"],
+  "exclude": ["node_modules", "build", "scripts"]
+}
