@@ -71,17 +71,22 @@ module.exports = {
     devtoolModuleFilenameTemplate: info =>
       path.resolve(info.absoluteResourcePath).replace(/\\/g, '/'),
   },
-  // optimization: {
-  //   splitChunks: {
-  //     chunks: 'all',
-  //     name: false,
-  //   },
-  //   removeAvailableModules: false,
-  //   removeEmptyChunks: false,
-  //   runtimeChunk: false,
-  // },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      name: false,
+    },
+    removeAvailableModules: false,
+    removeEmptyChunks: false,
+    runtimeChunk: false,
+  },
   resolve: {
-    modules: ['node_modules'].concat(process.env.NODE_PATH.split(path.delimiter).filter(Boolean)),
+      symlinks: false,
+    modules: [
+        path.resolve(__dirname, '../packages/'),
+        path.resolve(__dirname, '../'),
+        'node_modules',
+    ].concat(process.env.NODE_PATH.split(path.delimiter).filter(Boolean)),
     extensions: [
       '.mjs',
       '.web.ts',
@@ -96,7 +101,7 @@ module.exports = {
       '.styl',
     ],
     alias: {
-        packages: path.resolve(__dirname, '../packages'),
+      packages: path.resolve(__dirname, '../packages'),
     },
     plugins: [PnpWebpackPlugin, new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson])],
   },
@@ -169,8 +174,8 @@ module.exports = {
                         loose: true,
                       },
                     ],
-                    // '@babel/plugin-transform-runtime',
-                    // '@babel/plugin-syntax-dynamic-import',
+                    '@babel/plugin-transform-runtime',
+                    '@babel/plugin-syntax-dynamic-import',
                     'react-hot-loader/babel',
                   ],
                 },
@@ -291,7 +296,14 @@ module.exports = {
             ),
           },
           {
-            exclude: [/\.(js|mjs|jsx)$/, /\.html$/, /\.json$/, /\.ejs$/, /node_modules/, /@latoken-web-component/],
+            exclude: [
+              /\.(js|mjs|jsx)$/,
+              /\.html$/,
+              /\.json$/,
+              /\.ejs$/,
+              /node_modules/,
+              /@latoken-web-component/,
+            ],
             loader: require.resolve('file-loader'),
             options: {
               name: 'static/media/[name].[hash:8].[ext]',
@@ -305,7 +317,14 @@ module.exports = {
     new ForkTsCheckerWebpackPlugin(),
     new CaseSensitivePathsPlugin(),
     new WatchMissingNodeModulesPlugin(paths.appNodeModules),
-    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/, /antd$/, /lodash$/, /node_modules$/, /@latoken-web-component/),
+    new webpack.IgnorePlugin(
+      /^\.\/locale$/,
+      /moment$/,
+      /antd$/,
+      /lodash$/,
+      /node_modules$/,
+      /@latoken-web-component/
+    ),
   ],
 
   node: {

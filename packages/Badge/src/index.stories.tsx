@@ -1,9 +1,8 @@
 import React from 'react';
-import Badge from '@latoken-web-component/badge';
+import Badge from '../src/Badge';
 import { ComponentsStory } from 'packages/ComponentsStory';
 import { text, number } from '@storybook/addon-knobs';
 import withPropsCombinations from 'react-storybook-addon-props-combinations';
-import { Button } from 'antd';
 
 ComponentsStory.add('Badge', () => (
   <div>

@@ -9,7 +9,6 @@ import { LocationDescriptor } from 'history';
 import styles from './style/index.styl';
 import { Link } from 'react-router-dom';
 
-
 const rxTwoCNChar = /^[\u4e00-\u9fa5]{2}$/;
 const isTwoCNChar = rxTwoCNChar.test.bind(rxTwoCNChar);
 

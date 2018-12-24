@@ -6,7 +6,7 @@ export interface IBadge {
   className?: string;
 }
 
-export default class Badge extends Component<IBadge> {
+class Badge extends Component<IBadge> {
   render() {
     return (
       <div
@@ -23,3 +23,5 @@ export default class Badge extends Component<IBadge> {
     );
   }
 }
+
+export default Badge;
