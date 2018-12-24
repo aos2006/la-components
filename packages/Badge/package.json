@@ -1,7 +1,7 @@
 {
   "main": "./dist/main.js",
   "name": "@latoken-web-component/badge",
-  "version": "10.0.185",
+  "version": "10.0.186",
   "license": "MIT",
   "module": "./dist/main.js",
   "scripts": {

@@ -8,7 +8,7 @@ import { Omit } from '@latoken-component/utils/types/antd/_util/type';
 import { LocationDescriptor } from 'history';
 import styles from './style/index.styl';
 import { Link } from 'react-router-dom';
-import Badge from '@latoken-web-component/badge';
+
 
 const rxTwoCNChar = /^[\u4e00-\u9fa5]{2}$/;
 const isTwoCNChar = rxTwoCNChar.test.bind(rxTwoCNChar);
@@ -288,7 +288,6 @@ export default class Button extends React.Component<ButtonProps, any> {
       >
         {iconNode}
         {kids}
-          <Badge>{100}</Badge>
         <span className={styles.fathom} />
       </WrapButton>
     );

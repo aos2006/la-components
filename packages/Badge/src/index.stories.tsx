@@ -1,5 +1,5 @@
 import React from 'react';
-import Badge from '../src/Badge';
+import Badge from '@latoken-web-component/badge';
 import { ComponentsStory } from 'packages/ComponentsStory';
 import { text, number } from '@storybook/addon-knobs';
 import withPropsCombinations from 'react-storybook-addon-props-combinations';

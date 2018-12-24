@@ -71,15 +71,15 @@ module.exports = {
     devtoolModuleFilenameTemplate: info =>
       path.resolve(info.absoluteResourcePath).replace(/\\/g, '/'),
   },
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-      name: false,
-    },
-    removeAvailableModules: false,
-    removeEmptyChunks: false,
-    runtimeChunk: true,
-  },
+  // optimization: {
+  //   splitChunks: {
+  //     chunks: 'all',
+  //     name: false,
+  //   },
+  //   removeAvailableModules: false,
+  //   removeEmptyChunks: false,
+  //   runtimeChunk: false,
+  // },
   resolve: {
     modules: ['node_modules'].concat(process.env.NODE_PATH.split(path.delimiter).filter(Boolean)),
     extensions: [
@@ -134,8 +134,8 @@ module.exports = {
           },
           {
             test: [/\.(j|t)sx?$/, /\.(j|t)s?$/],
-            exclude: [/node_modules/],
-            // include: path.resolve(__dirname, '../packages'),
+            exclude: [/node_modules/, /@latoken-web-component/],
+            include: path.resolve(__dirname, '../packages'),
             use: [
               {
                 loader: 'babel-loader',
@@ -169,8 +169,8 @@ module.exports = {
                         loose: true,
                       },
                     ],
-                    '@babel/plugin-transform-runtime',
-                    '@babel/plugin-syntax-dynamic-import',
+                    // '@babel/plugin-transform-runtime',
+                    // '@babel/plugin-syntax-dynamic-import',
                     'react-hot-loader/babel',
                   ],
                 },
@@ -181,7 +181,7 @@ module.exports = {
           {
             test: /\.(js|mjs|jsx)$/,
             include: path.resolve(__dirname, '../packages'),
-            exclude: /node_modules/,
+            exclude: [/node_modules/, /@latoken-web-component/],
             loader: require.resolve('babel-loader'),
             options: {
               customize: require.resolve('babel-preset-react-app/webpack-overrides'),
@@ -213,7 +213,7 @@ module.exports = {
           },
           {
             test: /\.(js|mjs)$/,
-            exclude: /@babel(?:\/|\\{1,2})runtime/,
+            exclude: [/@babel(?:\/|\\{1,2})runtime/, /node_modules/, /@latoken-web-component/],
             loader: require.resolve('babel-loader'),
             options: {
               babelrc: false,
@@ -291,7 +291,7 @@ module.exports = {
             ),
           },
           {
-            exclude: [/\.(js|mjs|jsx)$/, /\.html$/, /\.json$/, /\.ejs$/],
+            exclude: [/\.(js|mjs|jsx)$/, /\.html$/, /\.json$/, /\.ejs$/, /node_modules/, /@latoken-web-component/],
             loader: require.resolve('file-loader'),
             options: {
               name: 'static/media/[name].[hash:8].[ext]',
@@ -305,7 +305,7 @@ module.exports = {
     new ForkTsCheckerWebpackPlugin(),
     new CaseSensitivePathsPlugin(),
     new WatchMissingNodeModulesPlugin(paths.appNodeModules),
-    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/, /antd$/, /lodash$/, /node_modules$/),
+    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/, /antd$/, /lodash$/, /node_modules$/, /@latoken-web-component/),
   ],
 
   node: {
