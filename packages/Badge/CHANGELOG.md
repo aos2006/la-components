@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 10.0.194 (2018-12-25)
+
+**Note:** Version bump only for package @latoken-web-component/badge
+
+
+
+
+
+## 10.0.192 (2018-12-25)
+
+**Note:** Version bump only for package @latoken-web-component/badge
+
+
+
+
+
+## 10.0.191 (2018-12-25)
+
+**Note:** Version bump only for package @latoken-web-component/badge
+
+
+
+
+
+## 10.0.189 (2018-12-25)
+
+**Note:** Version bump only for package @latoken-web-component/badge
+
+
+
+
+
+## 10.0.187 (2018-12-25)
+
+**Note:** Version bump only for package @latoken-web-component/badge
+
+
+
+
+
 ## 0.0.3 (2018-12-25)
 
 **Note:** Version bump only for package @latoken-web-component/badge
