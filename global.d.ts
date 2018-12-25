@@ -56,6 +56,7 @@ interface Window {
   logException: (e: Error) => void;
   web3: object;
   stores: any;
+  config: any;
   mist: string;
   yandex_metrika_accounts: number[];
   isTest: boolean;

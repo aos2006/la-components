@@ -3,6 +3,7 @@ const path = require('path');
 const webpack = require('webpack');
 const PnpWebpackPlugin = require('pnp-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const tsImportPluginFactory = require('ts-import-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
@@ -81,11 +82,11 @@ module.exports = {
     runtimeChunk: false,
   },
   resolve: {
-      symlinks: false,
+    symlinks: false,
     modules: [
-        path.resolve(__dirname, '../packages/'),
-        path.resolve(__dirname, '../'),
-        'node_modules',
+      path.resolve(__dirname, '../packages/'),
+      path.resolve(__dirname, '../'),
+      'node_modules',
     ].concat(process.env.NODE_PATH.split(path.delimiter).filter(Boolean)),
     extensions: [
       '.mjs',
@@ -143,41 +144,55 @@ module.exports = {
             include: path.resolve(__dirname, '../packages'),
             use: [
               {
-                loader: 'babel-loader',
+                loader: 'awesome-typescript-loader',
                 options: {
-                  cacheDirectory: true,
-                  babelrc: false,
-                  presets: [
-                    [
-                      '@babel/preset-env',
-                      { useBuiltIns: false, targets: { browsers: 'last 2 versions' } }, // or whatever your project requires
+                  getCustomTransformers: () => ({
+                    before: [
+                      tsImportPluginFactory({
+                        libraryName: 'antd',
+                        libraryDirectory: 'es',
+                        style: true,
+                      }),
                     ],
-                    '@babel/preset-typescript',
-                    '@babel/preset-react',
-                  ],
-                  plugins: [
-                    ['import', { libraryName: 'antd', libraryDirectory: 'es', style: true }],
-                    [
-                      require.resolve('babel-plugin-named-asset-import'),
-                      {
-                        loaderMap: {
-                          svg: {
-                            ReactComponent: '@svgr/webpack?-prettier,-svgo![path]',
+                  }),
+                  useBabel: true,
+                  babelOptions: {
+                    babelrc: false /* Important line */,
+                    presets: [
+                      [
+                        '@babel/preset-env',
+                        { useBuiltIns: false, targets: { browsers: 'last 2 versions' } }, // or whatever your project requires
+                      ],
+                      '@babel/preset-typescript',
+                      '@babel/preset-react',
+                    ],
+                    plugins: [
+                      ['import', { libraryName: 'antd', libraryDirectory: 'es', style: true }],
+                      [
+                        require.resolve('babel-plugin-named-asset-import'),
+                        {
+                          loaderMap: {
+                            svg: {
+                              ReactComponent: '@svgr/webpack?-prettier,-svgo![path]',
+                            },
                           },
                         },
-                      },
+                      ],
+                      ['@babel/plugin-proposal-decorators', { legacy: true }],
+                      [
+                        '@babel/plugin-proposal-class-properties',
+                        {
+                          loose: true,
+                        },
+                      ],
+                      '@babel/plugin-transform-runtime',
+                      '@babel/plugin-syntax-dynamic-import',
+                      'react-hot-loader/babel',
                     ],
-                    ['@babel/plugin-proposal-decorators', { legacy: true }],
-                    [
-                      '@babel/plugin-proposal-class-properties',
-                      {
-                        loose: true,
-                      },
-                    ],
-                    '@babel/plugin-transform-runtime',
-                    '@babel/plugin-syntax-dynamic-import',
-                    'react-hot-loader/babel',
-                  ],
+                  },
+                  babelCore: '@babel/core',
+                  cacheDirectory: true,
+                  babelrc: false,
                 },
               },
               'react-docgen-typescript-loader',
@@ -314,7 +329,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new ForkTsCheckerWebpackPlugin(),
     new CaseSensitivePathsPlugin(),
     new WatchMissingNodeModulesPlugin(paths.appNodeModules),
     new webpack.IgnorePlugin(

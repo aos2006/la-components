@@ -3,8 +3,8 @@ import { findDOMNode } from 'react-dom';
 import _ from 'lodash';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Icon from '../../Icon/src/Icon';
-import { Omit } from '@latoken-component/utils/types/antd/_util/type';
+import Icon from '@latoken-web-component/icon';
+import { Omit } from '@latoken-web-component/types';
 import { LocationDescriptor } from 'history';
 import styles from './style/index.styl';
 import { Link } from 'react-router-dom';
@@ -51,10 +51,12 @@ export interface BaseButtonProps<T> extends Omit<React.HTMLProps<T>, 'ref' | 'si
   icon?: string;
   shape?: IButtonShape;
   size?: IButtonSize;
+  disabled?: boolean;
   loading?: boolean | { delay?: number };
   className?: string;
   active?: boolean;
   block?: boolean;
+  onClick?: (e) => any;
   htmlType?: IButtonHtmlType;
   to?: LocationDescriptor;
 }

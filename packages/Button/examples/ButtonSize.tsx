@@ -1,7 +1,5 @@
 import React from 'react';
-// import {  Radio, Icon } from 'antd';
-import Button, { IButtonSize } from '../Button';
-// import ButtonGroup from "../ButtonGroup"
+import Button, { IButtonSize } from '../src/Button';
 
 export default class ButtonSize extends React.Component<
   any,
@@ -20,14 +18,8 @@ export default class ButtonSize extends React.Component<
   };
 
   render() {
-    // const size = this.state.size;
     return (
       <div>
-        {/*<ButtonGroup value={size} onChange={this.handleSizeChange}>*/}
-        {/*<Radio.Button value="large">Large</Radio.Button>*/}
-        {/*<Radio.Button value="default">Default</Radio.Button>*/}
-        {/*<Radio.Button value="small">Small</Radio.Button>*/}
-        {/*</ButtonGroup>*/}
         <h4>small</h4>
         <Button type="primary" size="small">
           Primary

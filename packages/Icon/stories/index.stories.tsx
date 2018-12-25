@@ -1,12 +1,7 @@
 import React from 'react';
 import Icon from '../src/Icon';
 import { ComponentsStory } from 'packages/ComponentsStory';
-import { text, number } from '@storybook/addon-knobs';
-import withPropsCombinations from 'react-storybook-addon-props-combinations';
-import CopyToClipboard from 'react-copy-to-clipboard';
-import { message } from 'antd';
 
-interface IAllIconProps {}
 
 const context = require.context('../src/icons', true, /\.svg$/);
 const NAMES = [];

@@ -2,23 +2,31 @@ import cn from 'classnames';
 import React, { Component } from 'react';
 import styles from './Badge.styl';
 
-export interface IBadge {
+export interface IBadgeProps {
   className?: string;
+  children?: any;
 }
 
-class Badge extends Component<IBadge> {
+class Badge extends Component<IBadgeProps> {
+  static defaultProps: IBadgeProps = {
+    className: '',
+    children: null,
+  };
+
   render() {
+    const { children, className } = this.props;
+
     return (
       <div
         className={cn([
           styles.badge,
           {
-            [styles.large]: this.props.children > 99,
+            [styles.large]: children > 99,
           },
-          this.props.className,
+          className,
         ])}
       >
-        {this.props.children}
+        {children}
       </div>
     );
   }

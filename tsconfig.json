@@ -6,23 +6,30 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "lib",
+    "skipLibCheck": true,
     "jsx": "react",
+    "baseUrl": "./",
     "rootDir": ".",
     "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
+    "keyofStringsOnly": true,
     "removeComments": false,
     "experimentalDecorators": true,
     "noImplicitAny": false,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "allowSyntheticDefaultImports": true,
-    "allowJs": true
+    "allowJs": false,
+    "types" : [],
+    "paths": {
+      "packages": ["packages"]
+    }
   },
   "awesomeTypescriptLoaderOptions": {
     "errorsAsWarnings": true,
     "useTranspileModule": true
   },
-  "include": ["src", "src/global.d.ts"],
-  "exclude": ["node_modules", "build", "scripts"]
+  "exclude": ["node_modules", "packages/**/*.test.ts", "packages/**/*.spec.ts"],
+  "include": ["packages/**/*", "global.d.ts", "translate.d.ts"]
 }

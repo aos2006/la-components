@@ -1,6 +1,6 @@
 import React from 'react';
 // import {  Radio, Icon } from 'antd';
-import Button, { IButtonSize } from '../Button';
+import Button, { IButtonSize } from '../src/Button';
 // import ButtonGroup from "../ButtonGroup"
 
 export default class ButtonBlock extends React.Component<
