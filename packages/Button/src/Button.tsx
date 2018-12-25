@@ -4,7 +4,7 @@ import _ from 'lodash';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Icon from '@latoken-web-component/icon';
-import { Omit } from '@latoken-web-component/types';
+import { Omit } from '@latoken-web-component/types/src/antd/_util/type';
 import { LocationDescriptor } from 'history';
 import styles from './style/index.styl';
 import { Link } from 'react-router-dom';

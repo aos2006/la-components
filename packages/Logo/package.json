@@ -1,0 +1,10 @@
+{
+  "main": "./dist/main.js",
+  "module": "./dist/main.js",
+  "name": "@latoken-web-component/logo",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "build": "NODE_ENV=production webpack ./src/Logo.tsx --config ../../webpack.config.build.js"
+  }
+}
