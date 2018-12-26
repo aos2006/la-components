@@ -1,0 +1,15 @@
+{
+  "main": "./dist/main.js",
+  "module": "./dist/main.js",
+  "name": "@latoken-web-component/hash",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "build": "NODE_ENV=production webpack ./src/Hash.tsx --config ../../webpack.config.build.js"
+  },
+  "dependencies": {
+    "@latoken-web-component/icon": "^0.0.6",
+    "@latoken-web-component/button": "^0.0.6",
+    "@latoken-web-component/utils": "^10.0.191"
+  }
+}
