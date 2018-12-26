@@ -1153,6 +1153,11 @@
   resolved "https://npm.nekotal.tech/@icons%2fmaterial/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
   integrity sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw==
 
+"@kadira/storybook-addons@^1.6.1":
+  version "1.6.1"
+  resolved "https://npm.nekotal.tech/@kadira%2fstorybook-addons/-/storybook-addons-1.6.1.tgz#e84923d298b38c7c1231ddebc219dfb87b2858a6"
+  integrity sha1-6Ekj0pizjHwSMd3rwhnfuHsoWKY=
+
 "@lerna/add@^3.7.2":
   version "3.7.2"
   resolved "https://npm.nekotal.tech/@lerna%2fadd/-/add-3.7.2.tgz#209c8d00e08baeae9c97e9b2e667ad92a39d3907"
@@ -2871,9 +2876,9 @@ ant-design-palettes@^1.1.3:
     tinycolor2 "^1.4.1"
 
 antd@^3.11.2:
-  version "3.11.5"
-  resolved "https://npm.nekotal.tech/antd/-/antd-3.11.5.tgz#70a22c902fa765293113f4a25f7c8a1c642ab175"
-  integrity sha512-+uJJ1S8FrlTImwRzYvhRFvf72K5ft0OV2adxhxaKx1x5r/JHzEKLjMSkwLqIEswS0iUMkMnp1VUNvUN1PFiJrw==
+  version "3.11.6"
+  resolved "https://npm.nekotal.tech/antd/-/antd-3.11.6.tgz#bc69434c59025edf65ad077ad2d4d3ce646b2a64"
+  integrity sha512-7JrL5IWH6qLLa8u8H9na0DCTkVzbE3Nyg+QC71FJEEO9hJXsAqybcj3GU+HYe/Zsa2ndlN9TMFlPZoYWX1Rz8w==
   dependencies:
     "@ant-design/icons" "~1.1.15"
     "@ant-design/icons-react" "~1.1.2"
@@ -4617,6 +4622,11 @@ big.js@^3.1.3:
   version "3.2.0"
   resolved "https://npm.nekotal.tech/big.js/-/big.js-3.2.0.tgz#a5fc298b81b9e0dca2e458824784b65c52ba588e"
   integrity sha512-+hN/Zh2D08Mx65pZ/4g5bsmNiZUuChDiQfTUQ7qJr4/kuopCr88xZsAXv6mBoZEsUI4OuGHlX59qE94K2mMW8Q==
+
+big.js@^5.2.2:
+  version "5.2.2"
+  resolved "https://npm.nekotal.tech/big.js/-/big.js-5.2.2.tgz#65f0af382f578bcdc742bd9c281e9cb2d7768328"
+  integrity sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==
 
 bin-links@^1.1.2:
   version "1.1.2"
@@ -8529,6 +8539,11 @@ hex-color-regex@^1.1.0:
   resolved "https://npm.nekotal.tech/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
+highlight.js@^9.11.0:
+  version "9.13.1"
+  resolved "https://npm.nekotal.tech/highlight.js/-/highlight.js-9.13.1.tgz#054586d53a6863311168488a0f58d6c505ce641e"
+  integrity sha512-Sc28JNQNDzaH6PORtRLMvif9RSn1mYuOoX3omVjnb0+HbpPygU2ALBI0R/wsiqCb4/fcp07Gdo8g+fhtFrQl6A==
+
 history@^4.7.2:
   version "4.7.2"
   resolved "https://npm.nekotal.tech/history/-/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
@@ -10235,6 +10250,13 @@ json5@^0.5.0, json5@^0.5.1:
   resolved "https://npm.nekotal.tech/json5/-/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
   integrity sha1-Hq3nrMASA0rYTiOWdn6tn6VJWCE=
 
+json5@^1.0.1:
+  version "1.0.1"
+  resolved "https://npm.nekotal.tech/json5/-/json5-1.0.1.tgz#779fb0018604fa854eacbf6252180d83543e3dbe"
+  integrity sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==
+  dependencies:
+    minimist "^1.2.0"
+
 jsonfile@^2.1.0:
   version "2.4.0"
   resolved "https://npm.nekotal.tech/jsonfile/-/jsonfile-2.4.0.tgz#3736a2b428b87bbda0cc83b53fa3d633a35c2ae8"
@@ -10662,7 +10684,7 @@ loader-runner@^2.3.0:
   resolved "https://npm.nekotal.tech/loader-runner/-/loader-runner-2.3.1.tgz#026f12fe7c3115992896ac02ba022ba92971b979"
   integrity sha512-By6ZFY7ETWOc9RFaAIb23IjJVcM4dvJC/N57nmdz9RSkMXvAXGI7SyVlAw3v8vjtDRlqThgVDVmTnr9fqMlxkw==
 
-loader-utils@1.1.0, loader-utils@^1.0.2, loader-utils@^1.1.0:
+loader-utils@1.1.0:
   version "1.1.0"
   resolved "https://npm.nekotal.tech/loader-utils/-/loader-utils-1.1.0.tgz#c98aef488bcceda2ffb5e2de646d6a754429f5cd"
   integrity sha1-yYrvSIvM7aL/teLeZG1qdUQp9c0=
@@ -10680,6 +10702,15 @@ loader-utils@^0.2.11, loader-utils@^0.2.15:
     emojis-list "^2.0.0"
     json5 "^0.5.0"
     object-assign "^4.0.1"
+
+loader-utils@^1.0.2, loader-utils@^1.1.0:
+  version "1.2.1"
+  resolved "https://npm.nekotal.tech/loader-utils/-/loader-utils-1.2.1.tgz#64bbbac69aa5840d03754ba676a963dec568e844"
+  integrity sha512-3Zhx4qDqBQ9U8udWB3RMJ29nLu5a3ObNOSzk87woPvge01pi0wABowgv7F79Z4mL0DGtHRi/oOndT34EVhInoQ==
+  dependencies:
+    big.js "^5.2.2"
+    emojis-list "^2.0.0"
+    json5 "^1.0.1"
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -13517,6 +13548,14 @@ pretty-format@^23.6.0:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
 
+pretty-format@^24.0.0-alpha.2:
+  version "24.0.0-alpha.2"
+  resolved "https://npm.nekotal.tech/pretty-format/-/pretty-format-24.0.0-alpha.2.tgz#cbcd7609a4e594c478f46aa1b6d652d285342671"
+  integrity sha512-mqFCjVVaBk00XB6V3BPrH7WAwOimfLMDjj1YDpSmV8BlDkEcTtQU/Qu6KDTsSi7lYjzHzZp8+NsmeMXw/6Cl4A==
+  dependencies:
+    ansi-regex "^4.0.0"
+    ansi-styles "^3.2.0"
+
 pretty-hrtime@^1.0.3:
   version "1.0.3"
   resolved "https://npm.nekotal.tech/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
@@ -14439,6 +14478,13 @@ react-google-recaptcha@0.11.1:
   dependencies:
     prop-types ">=15.5.0"
 
+react-highlight@^0.12.0:
+  version "0.12.0"
+  resolved "https://npm.nekotal.tech/react-highlight/-/react-highlight-0.12.0.tgz#34de986a0bfdf228904d0c269b69538d95b35802"
+  integrity sha512-j04EWbYOFM0PryhF5Vvl0FDa/dD3M6q0Sl+nFN9kTvWQ9hFkfISNNs85+ssL4TSkDM+4pQTpMdxlDRi8yfIxjw==
+  dependencies:
+    highlight.js "^9.11.0"
+
 react-hot-loader@^4.3.11:
   version "4.6.3"
   resolved "https://npm.nekotal.tech/react-hot-loader/-/react-hot-loader-4.6.3.tgz#d9c8923c45b35fd51538ba4297081a00be6bccb1"
@@ -14509,6 +14555,15 @@ react-modal@^3.6.1:
     prop-types "^15.5.10"
     react-lifecycles-compat "^3.0.0"
     warning "^3.0.0"
+
+react-motion@^0.5.2:
+  version "0.5.2"
+  resolved "https://npm.nekotal.tech/react-motion/-/react-motion-0.5.2.tgz#0dd3a69e411316567927917c6626551ba0607316"
+  integrity sha512-9q3YAvHoUiWlP3cK0v+w1N5Z23HXMj4IF4YuvjvWegWqNPfLXsOBE/V7UvQGpXxHFKRQQcNcVQE31g9SB/6qgQ==
+  dependencies:
+    performance-now "^0.2.0"
+    prop-types "^15.5.8"
+    raf "^3.1.0"
 
 react-router-dom@^4.3.1:
   version "4.3.1"
@@ -14590,6 +14645,14 @@ react-textarea-autosize@^7.0.4:
   dependencies:
     "@babel/runtime" "^7.1.2"
     prop-types "^15.6.0"
+
+react-toggle-button@^2.1.0:
+  version "2.2.0"
+  resolved "https://npm.nekotal.tech/react-toggle-button/-/react-toggle-button-2.2.0.tgz#a1b92143aa0df414642fcb141f0879f545bc5a89"
+  integrity sha1-obkhQ6oN9BRkL8sUHwh59UW8Wok=
+  dependencies:
+    prop-types "^15.6.0"
+    react-motion "^0.5.2"
 
 react-transition-group@2.2.1:
   version "2.2.1"
@@ -15492,9 +15555,9 @@ serialize-error@^2.1.0:
   integrity sha1-ULZ51WNc34Rme9yOWa9OW4HV9go=
 
 serialize-javascript@^1.4.0:
-  version "1.5.0"
-  resolved "https://npm.nekotal.tech/serialize-javascript/-/serialize-javascript-1.5.0.tgz#1aa336162c88a890ddad5384baebc93a655161fe"
-  integrity sha512-Ga8c8NjAAp46Br4+0oZ2WxJCwIzwP60Gq1YPgU+39PiTVxyed/iKE/zyZI6+UlVYH5Q4PaQdHhcegIFPZTUfoQ==
+  version "1.6.0"
+  resolved "https://npm.nekotal.tech/serialize-javascript/-/serialize-javascript-1.6.0.tgz#b30ce5ddd6517f2c445e129ff5834a399fb5861e"
+  integrity sha512-AQxrNqu4EXWt03dJdgKXI+Au9+pvEuM5+Nk5g6+TmuxMCkEL03VhZ31HM+VKeaaZbFpDHaoSruiHq4PW9AIrOQ==
 
 serve-favicon@^2.5.0:
   version "2.5.0"
@@ -16065,6 +16128,13 @@ stompjs@^2.3.3:
   integrity sha1-NBeKx7uO4pTMXVVK2LUPf1RZ/Y4=
   optionalDependencies:
     websocket latest
+
+storybook-addon-i18n-tools@^1.0.0:
+  version "1.0.0"
+  resolved "https://npm.nekotal.tech/storybook-addon-i18n-tools/-/storybook-addon-i18n-tools-1.0.0.tgz#276f5637acfccb12f7867abfb091f7599bddcfb0"
+  integrity sha1-J29WN6z8yxL3hnq/sJH3WZvdz7A=
+  dependencies:
+    react-toggle-button "^2.1.0"
 
 storybook-addon-jsx@^6.0.0:
   version "6.0.0"

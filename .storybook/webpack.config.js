@@ -84,8 +84,8 @@ module.exports = {
   resolve: {
     symlinks: false,
     modules: [
-      path.resolve(__dirname, '../packages/'),
-      path.resolve(__dirname, '../'),
+      "../node_modules",
+      "./node_modules",
       'node_modules',
     ].concat(process.env.NODE_PATH.split(path.delimiter).filter(Boolean)),
     extensions: [

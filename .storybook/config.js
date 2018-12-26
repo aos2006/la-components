@@ -1,19 +1,18 @@
 import React from 'react';
 import { configure, addDecorator, setAddon } from '@storybook/react';
+import { withOptions } from '@storybook/addon-options';
 import { withNotes } from '@storybook/addon-notes';
 import { withInfo } from '@storybook/addon-info';
 import { configureViewport } from '@storybook/addon-viewport';
 import { withKnobs } from '@storybook/addon-knobs';
 import { setDefaults } from 'react-storybook-addon-props-combinations';
 import JSXAddon from 'storybook-addon-jsx';
+import 'highlight.js/styles/dark.css';
+import { themes } from '@storybook/components';
+import '../packages/services/i18_dev';
 
 setAddon(JSXAddon);
 
-setDefaults({
-    style: {
-      marginBottom: '20px',
-    }
-});
 
 addDecorator(withKnobs);
 

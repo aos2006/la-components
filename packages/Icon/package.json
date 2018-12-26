@@ -2,7 +2,7 @@
   "main": "./dist/main.js",
   "module": "./dist/main.js",
   "name": "@latoken-web-component/icon",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "license": "MIT",
   "scripts": {
     "build": "NODE_ENV=production webpack ./src/Icon.tsx --config ../../webpack.config.build.js"

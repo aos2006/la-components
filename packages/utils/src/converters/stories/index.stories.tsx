@@ -3,10 +3,11 @@ import React from 'react';
 // import convertToDashedName from '../convertToDashedName/convertToDashedName';
 // import objectToEncoded from '../objectToEncoded/objectToEncoded';
 import { UtilsStory } from 'packages/UtilsStory';
+import Highlight from 'react-highlight';
 
 UtilsStory
 	.add('converters', () => <div>
-	<code>
-		Function mutate base array....wth, not pure
-	</code>
+    <Highlight language="javascript">
+      {`function foo() { return 'bar' }`}
+    </Highlight>
 </div>);

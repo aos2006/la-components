@@ -2,7 +2,6 @@ import React from 'react';
 import Icon from '../src/Icon';
 import { ComponentsStory } from 'packages/ComponentsStory';
 
-
 const context = require.context('../src/icons', true, /\.svg$/);
 const NAMES = [];
 
